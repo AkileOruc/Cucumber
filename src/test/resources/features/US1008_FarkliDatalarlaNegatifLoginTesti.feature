@@ -1,7 +1,7 @@
 Feature: US1008 negatif login testi
 
   # verilen 3 farkli username ve password ile negatif login testi yapin
-
+@hello
   Scenario Outline: TC15
 
     Given  kullanici "qdUrl" anasayfaya gider

@@ -2,6 +2,7 @@
 
         package stepdefinitions;
 
+
         import io.cucumber.java.en.And;
         import io.cucumber.java.en.Given;
         import io.cucumber.java.en.Then;
@@ -12,7 +13,7 @@
         import utilities.ConfigReader;
         import utilities.Driver;
 
-public class AmazonStepdefinitions {
+        public class AmazonStepdefinitions {
     AmazonPage amazonPage= new AmazonPage();
 
     @Given("kullanici amazon anasayfaya gider")
@@ -72,8 +73,8 @@ public class AmazonStepdefinitions {
     public void snBekler(int beklemeSuresiSaniye) {
 
         try {
-            Thread.sleep(beklemeSuresiSaniye*1000);
-        } catch (InterruptedException e) {
+            Thread.sleep(beklemeSuresiSaniye* 1000L);
+        } catch (InterruptedException ignored) {
 
         }
     }
